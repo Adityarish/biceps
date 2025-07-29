@@ -5,6 +5,7 @@ import mediapipe as mp
 from PIL import Image
 import time
 
+
 # Set page configuration
 st.set_page_config(
     page_title="AI Fitness Coach",
@@ -151,7 +152,7 @@ with col1:
     st.subheader("Live Webcam Feed")
     frame_placeholder = st.empty()
     if not st.session_state.run_webcam:
-        frame_placeholder.image("static/placeholder.png", caption="Webcam is off. Click 'Start Webcam' in the sidebar.")
+        frame_placeholder.image("image.jpg", caption="Webcam is off. Click 'Start Webcam' in the sidebar.")
 
 with col2:
     st.subheader("Workout Dashboard")
